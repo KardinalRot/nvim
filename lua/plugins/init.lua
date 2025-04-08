@@ -22,4 +22,23 @@ return {
   -- 		},
   -- 	},
   -- },
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    lazy = false,
+    after = "telescope.nvim",
+    config = function()
+      require("telescope").load_extension "file_browser"
+    end,
+  },
+
+  { "junegunn/vim-peekaboo", lazy = false },
+
+  { "habamax/vim-asciidoctor" },
+
+  { "mbbill/undotree", lazy = false, },
+
+  {
+    "hashivim/vim-terraform",
+    lazy = false,
+  },
 }
